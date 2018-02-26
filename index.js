@@ -1,7 +1,7 @@
 var http = require('http');
 var formidable = require('formidable');
 var fs = require('fs');
-var convertExcel = require('excel-as-json').processFile
+var convertExcel = require('excel-as-json').processFile;
 
 var port = process.env.PORT || 8080;
 
