@@ -3,6 +3,7 @@ var formidable = require('formidable');
 var fs = require('fs');
 var convertExcel = require('excel-as-json').processFile
 
+var port = process.env.PORT || 8080;
 
 http.createServer(function (req, res) {
   if (req.url == '/fileupload') {
@@ -43,4 +44,4 @@ http.createServer(function (req, res) {
     res.write('</form>');
     return res.end();
   }
-}).listen(8080);
+}).listen(port);
