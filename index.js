@@ -6,6 +6,7 @@ var convertExcel = require('excel-as-json').processFile;
 var port = process.env.PORT || 8080;
 
 http.createServer(function (req, res) {
+  res.setHeader('Access-Control-Allow-Headers', req.header.origin);
   if (req.url == '/fileupload') {
     var form = new formidable.IncomingForm();
     form.parse(req, function (err, fields, files) {
