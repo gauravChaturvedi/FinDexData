@@ -76,6 +76,22 @@ http.createServer(function (req, res) {
         return res.end();
       }
     })
+  } else if(req.url == '/getPercentileData') {
+    var options = {
+      sheet:'4',
+      isColOriented: false,
+      omitEmtpyFields: false
+    }
+    convertExcel('FinDexWorkBook.xlsx', 'row.json', options, (err, data) => {
+      if(err) {
+        console.log( "JSON conversion failure: #{err}");
+        return err;
+      } else {
+        console.log('success');
+        res.write(JSON.stringify(data));
+        return res.end();
+      }
+    })
   } else {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write('<form action="fileupload" method="post" enctype="multipart/form-data">');
