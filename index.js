@@ -45,7 +45,7 @@ http.createServer(function (req, res) {
     }
     convertExcel('Citi FinDex Project Master Sheet_Final.xlsx', 'row.json', options, (err, data) => {
       if(err) {
-        console.log( "JSON conversion failure: #{err}");
+        console.log( "JSON conversion failure: #{err} ");
         return err;
       } else {
         console.log('success');
