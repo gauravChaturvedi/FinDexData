@@ -39,7 +39,7 @@ http.createServer(function (req, res) {
     });
   } else if(req.url == '/getData') {
     var options = {
-      sheet:'1',
+      sheet:'3',
       isColOriented: false,
       omitEmtpyFields: false
     }
@@ -55,7 +55,7 @@ http.createServer(function (req, res) {
     })
   } else if(req.url == '/getPercentileData') {
     var options = {
-      sheet:'4',
+      sheet:'5',
       isColOriented: false,
       omitEmtpyFields: false
     }
