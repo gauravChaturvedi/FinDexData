@@ -59,7 +59,7 @@ http.createServer(function (req, res) {
       isColOriented: false,
       omitEmtpyFields: false
     }
-    convertExcel('FinDexWorkBook.xlsx', 'row.json', options, (err, data) => {
+    convertExcel('Citi FinDex Project Master Sheet_Final.xlsx', 'row.json', options, (err, data) => {
       if(err) {
         console.log( "JSON conversion failure: #{err}");
         return err;
