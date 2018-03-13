@@ -41,7 +41,7 @@ http.createServer(function (req, res) {
     var options = {
       sheet:'3',
       isColOriented: false,
-      omitEmtpyFields: false
+      omitEmtpyFields: true
     }
     convertExcel('Citi FinDex Project Master Sheet_Final.xlsx', 'row.json', options, (err, data) => {
       if(err) {
@@ -57,7 +57,7 @@ http.createServer(function (req, res) {
     var options = {
       sheet:'5',
       isColOriented: false,
-      omitEmtpyFields: false
+      omitEmtpyFields: true
     }
     convertExcel('Citi FinDex Project Master Sheet_Final.xlsx', 'row.json', options, (err, data) => {
       if(err) {
