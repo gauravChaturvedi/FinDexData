@@ -1,18 +1,24 @@
 {
   "name": "nodeupload",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "Gaurav Chaturvedi",
-  "license": "ISC",
+  "license": "",
   "dependencies": {
+    "connect-ensure-login": "^0.1.1",
+    "cors": "^2.8.1",
+    "dotenv": "^4.0.0",
     "excel-as-json": "^2.0.1",
+    "express": "^4.14.0",
+    "express-jwt": "^5.1.0",
+    "express-jwt-authz": "^1.0.0",
     "formidable": "^1.1.1",
-    "http": "0.0.0",
-    "superagent": "^3.8.2"
+    "jwks-rsa": "^1.1.1",
+    "passport": "^0.4.0",
+    "passport-auth0": "^0.6.1"
   }
 }
